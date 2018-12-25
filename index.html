@@ -1,0 +1,291 @@
+<html>
+    <head>
+     <link href="css/smshome..css" rel="stylesheet">
+    <title>
+      CGPA</title>
+    </head>
+    <body>
+     <div id="index">    
+       <h1 align="center" style="color:white; font-size:40px;"> CALCULATE YOUR CGPA </h1>
+        <form >
+        <table align="center" border="5px solid"style="width:30%">
+             <tr>
+          <td colspan="6" style=" text-align:center;margin-top:4px;color:white;background-color: black"><h3>ENTER THEORY GRADES</h3></td>
+         </tr> 
+            <tr>
+            <td style="text-align:center;color: white"> ENTER 1st GRADE <td>
+            <td><input type="text" name="name" placeholder="enter 1st subject grade " id="g1"   required></td>
+              </tr>
+            <tr>
+            <td style="text-align:center;color:white"> ENTER 2nd GRADE <td>
+            <td><input type="text" name="name" placeholder="enter 2nd subject grade" id="g2"  required></td>
+              </tr>  
+            <tr>
+            <td style="text-align:center;color:white"> ENTER 3rd GRADE <td>
+            <td><input type="text" name="name" placeholder="enter 3rd subject grade" id="g3"  required></td>
+              </tr>  
+            <tr>
+            <td style="text-align:center;color:white"> ENTER 4th GRADE <td>
+            <td><input type="text" name="name" placeholder="enter 4th subject grade" id="g4"  required></td>
+              </tr>  
+            <tr>
+            <td style="text-align:center;color:white"> ENTER 5th GRADE <td>
+            <td><input type="text" name="name" placeholder="enter 5th subject grade" id="g5"  required></td>
+              </tr>
+                <tr>
+            <td style="text-align:center;color:white"> ENTER 6th GRADE <td>
+            <td><input type="text" name="name" placeholder="enter 6th subject grade" id="g6"  required></td>
+              </tr>
+      <tr>
+          <td colspan="6" style=" text-align:center;margin-top:20px;color:white;padding:2px;background-color: black"><h3>ENTER PRACTICAL GRADES</h3></td>
+         </tr>             
+        <tr>
+            <td style="text-align:center;color:white"> ENTER 1st GRADE <td>
+            <td><input type="text" name="name" placeholder="enter 1st practical grade " id="g7"  required></td>
+              </tr>
+                <tr>
+            <td style="text-align:center;color:white"> ENTER 2nd GRADE <td>
+            <td><input type="text" name="name" placeholder="enter 2nd practical grade" id="g8"  required></td>
+              </tr>
+    
+            <tr>
+            <td colspan="6" align="center" style="padding: 5px;"><input type="submit" name="submit" value="submit " onclick="showdata()"> </td> 
+            </tr>
+    </table>
+    
+
+</form>
+        </div>
+       
+          </body>
+<script>
+    function show()
+    {
+       alert('lovekesh');
+    }
+    function showdata()
+    {
+         var p,q,r,s,t,u,v,w,z=0;
+         var count=0;
+      //  alert(count);
+    p=document.getElementById('g1').value;
+      if(p=='F'||p=='f')
+         {  
+             alert('you are fail');
+             z=1;
+         }  
+        if(p=='O'||p=='o')
+            count=count+10;
+    else if(p=='A+'||p=='a+')
+            count=count+9;
+    else if(p=='A'||p=='a')
+            count=count+8;
+
+    else if(p=='B+'||p=='b+')
+            count=count+7;
+    else if(p=='B'||p=='b')
+            count=count+6;
+    else if(p=='C+'||p=='c+')
+            count=count+5;
+    else if(p=='C'||p=='c')
+            count=count+4;
+   else
+       count+=0;
+        
+
+       q=document.getElementById('g2').value;
+      if(q=='F'||q=='f')
+         {  
+             alert('you are fail');
+             z=1;
+         }  
+
+        if(q=='O'||q=='o')
+            count=count+10;
+    else if(q=='A+'||q=='a+')
+            count=count+9;
+    else if(q=='A'||q=='a')
+            count=count+8;
+
+    else if(q=='B+'||q=='b+')
+            count=count+7;
+    else if(q=='B'||q=='b')
+            count=count+6;
+    else if(q=='C+'||q=='c+')
+            count=count+5;
+    else if(q=='C'||q=='c')
+            count=count+4;
+   else
+         count+=0;
+         r=document.getElementById('g3').value;
+      if(r=='F'||r=='f')
+         {  
+             alert('you are fail');
+             z=1;
+         }  
+
+        
+        if(r=='O'||r=='o')
+            count=count+10;
+    else if(r=='A+'||r=='a+')
+            count=count+9;
+    else if(r=='A'||r=='a')
+            count=count+8;
+
+    else if(r=='B+'||r=='b+')
+            count=count+7;
+    else if(r=='B'||r=='b')
+            count=count+6;
+    else if(r=='C+'||r=='c+')
+            count=count+5;
+    else if(r=='C'||r=='c')
+            count=count+4;
+   else
+       count+=0;
+         s=document.getElementById('g4').value;
+      if(s=='F'||s=='f')
+         {  
+             alert('you are fail');
+             z=1;
+         }  
+
+        
+        if(s=='O'||s=='o')
+            count=count+10;
+    else if(s=='A+'||s=='a+')
+            count=count+9;
+    else if(s=='A'||s=='a')
+            count=count+8;
+
+    else if(s=='B+'||s=='b+')
+            count=count+7;
+    else if(s=='B'||s=='b')
+            count=count+6;
+    else if(s=='C+'||s=='c+')
+            count=count+5;
+    else if(s=='C'||s=='c')
+            count=count+4;
+   else
+       count+=0;
+        
+        
+    t=document.getElementById('g5').value;
+      if(t=='F'||t=='f')
+         {  
+             alert('you are fail');
+             z=1;
+         }  
+        if(t=='O'||t=='o')
+            count=count+10;
+    else if(t=='A+'||t=='a+')
+            count=count+9;
+    else if(t=='A'||t=='a')
+            count=count+8;
+
+    else if(t=='B+'||t=='b+')
+            count=count+7;
+    else if(t=='B'||t=='b')
+            count=count+6;
+    else if(t=='C+'||t=='c+')
+            count=count+5;
+    else if(t=='C'||t=='c')
+            count=count+4;
+   else
+       count+=0;
+         u=document.getElementById('g6').value;
+    
+          if(u=='F'||u=='f')
+         {  
+             alert('you are fail');
+             z=1;
+         }  
+        if(u=='O'||u=='o')
+            count=count+10;
+    else if(u=='A+'||u=='a+')
+            count=count+9;
+    else if(u=='A'||u=='a')
+            count=count+8;
+
+    else if(u=='B+'||u=='b+')
+            count=count+7;
+    else if(u=='B'||u=='b')
+            count=count+6;
+    else if(u=='C+'||u=='c+')
+            count=count+5;
+    else if(u=='C'||u=='c')
+            count=count+4;
+   else
+       count+=0;
+          var count1;
+        count1=count*4;
+        count=0;
+         v=document.getElementById('g7').value;
+      if(v=='F'||v=='f')
+         {  
+             alert('you are fail');
+             z=1;
+         }  
+        
+        if(v=='O'||v=='o')
+            count=count+10;
+    else if(v=='A+'||v=='a+')
+            count=count+9;
+    else if(v=='A'||v=='a')
+            count=count+8;
+
+    else if(v=='B+'||v=='b+')
+            count=count+7;
+    else if(v=='B'||v=='b')
+            count=count+6;
+    else if(v=='C+'||v=='c+')
+            count=count+5;
+    else if(v=='C'||v=='c')
+            count=count+4;
+   else
+       count+=0;
+         w=document.getElementById('g8').value;
+    
+          if(w=='F'||w=='f')
+         {  
+             alert('you are fail');
+             z=1;
+         }  if(w=='O'||w=='o')
+            count=count+10;
+    else if(w=='A+'||w=='a+')
+            count=count+9;
+    else if(w=='A'||w=='a')
+            count=count+8;
+
+    else if(w=='B+'||w=='b+')
+            count=count+7;
+    else if(w=='B'||w=='b')
+            count=count+6;
+    else if(w=='C+'||w=='c+')
+            count=count+5;
+    else if(w=='C'||w=='c')
+            count=count+4;
+   else
+       count=count+0;
+    
+        count=count*2;
+        // alert(count);
+        count=count+count1;
+        // alert(count1);
+        count=count/28;
+        
+   var result =" Your cgpa is " +  count  + ".";
+        if(z==0)
+        { 
+            alert(result);
+           if(count>=8)
+               alert('Party Dede ab to');
+        
+        }
+    }
+</script>
+
+
+
+
+
+</html>
